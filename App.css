@@ -1,0 +1,122 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+  flex-wrap: wrap;
+}
+
+form {
+  box-shadow: 20px 20px 20px 20px lightblue;
+  padding: 40px;
+}
+
+.container {
+  gap: 10px;
+  display: flex;
+}
+
+input {
+  padding: 10px 30px;
+  border-radius: 5px;
+}
+
+.content {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+}
+
+.icon {
+  margin-left: 5px;
+  margin-top: 2px;
+}
+
+select {
+  padding: 12px 60px;
+  border-radius: 5px;
+}
+
+textarea {
+  width: 710px;
+  height: 100px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.content__two {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  gap: 15px;
+}
+
+input[type="file"] {
+  border: 2px solid gray;
+  border-style: dashed;
+
+  padding: 5px;
+}
+
+.content__three {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.btn {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.btn1 {
+  cursor: pointer;
+  padding: 8px 25px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.btn2 {
+  cursor: pointer;
+  padding: 8px 25px;
+  border-radius: 5px;
+  background-color: blueviolet;
+  color: white;
+}
+
+.btn2:hover {
+  background: transparent;
+  color: black;
+}
+
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: blue;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  textarea {
+    width: 350px;
+  }
+}
